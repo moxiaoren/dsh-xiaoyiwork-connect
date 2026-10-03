@@ -1,0 +1,7 @@
+# dsh-xiaoyiwork-connect bundle layer.
+# 注册名为 xiaoyiwork 的 provider 路由；无需修改默认模型。
+# 凭据（proxyKey）在 DSH 进程内由 Electron safeStorage / OSCrypt 当场解密（不落盘），
+# 插件每 30s 轮询注册表，待小艺Work 启动后自动显示模型组。
+- insert:
+    - id: llm-xiaoyiwork
+      name: dsh-xiaoyiwork-connect
